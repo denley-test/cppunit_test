@@ -2,6 +2,7 @@ version: '3'
 
 services:
   cmake_test:
+    build: ./vendor/cmake/
     image: denley/cmake
     working_dir: /opt/cmake_test
     entrypoint: /opt/cmake_test/docker-entrypoint.sh
