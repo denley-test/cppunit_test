@@ -1,10 +1,13 @@
 cmake_minimum_required(VERSION 3.21.2)
-project(cmake_test)
+project(cppunit_test)
 
 set(CMAKE_CXX_STANDARD 17)
 
-include_directories(include
+include_directories(
+  include
 )
 
-set(SOURCE_FILES src/main.cpp)
-add_executable(${PROJECT_NAME} ${SOURCE_FILES})
+add_executable(${PROJECT_NAME}
+  src/main.cpp
+  src/Deque.cpp
+)

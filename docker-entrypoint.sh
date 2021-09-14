@@ -7,4 +7,4 @@ mkdir -p build
 cd build
 cmake ..
 make -j$(nproc --all)
-./cmake_test
+./cppunit_test

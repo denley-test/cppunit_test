@@ -1,11 +1,11 @@
 version: '3'
 
 services:
-  cmake_test:
+  cppunit_test:
     build: ./vendor/cmake/
     image: denley/cmake
-    working_dir: /opt/cmake_test
-    entrypoint: /opt/cmake_test/docker-entrypoint.sh
+    working_dir: /opt/app
+    entrypoint: /opt/app/docker-entrypoint.sh
     volumes:
-      - .:/opt/cmake_test
-      - ./src:/opt/cmake_test/src/
+      - .:/opt/app
+      - ./src:/opt/app/src/
